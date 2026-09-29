@@ -1,6 +1,6 @@
 # SENTINEL Document Intelligence & Local OCR Architecture
 
-SENTINEL's Document Intelligence pipeline provides a local-first bridge between visual feeds and future semantic memory. It extracts readable text from workspace images, notes, datasheets, and circuit diagrams entirely on-device.
+SENTINEL's Document Intelligence pipeline provides a local-first bridge between visual feeds and semantic memory. It extracts readable text from workspace images, notes, datasheets, and circuit diagrams locally on-device using EasyOCR (verified on host CPU) with no cloud OCR dependencies.
 
 ---
 

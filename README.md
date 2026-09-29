@@ -16,7 +16,7 @@
 
 Modern AI assistants force a tradeoff: cloud services offer powerful capabilities but require sending sensitive desk photos, audio recordings, and confidential documents to remote servers. Meanwhile, existing tools are fragmented — vision tools don't remember, chat models cannot see your physical desk hardware, and note-taking systems lack spatial awareness.
 
-**SENTINEL solves this by running 100% on-device**, unifying workspace vision, document intelligence, voice interaction, and semantic memory into a single private assistant — specifically architected for Qualcomm Snapdragon Copilot+ PC hardware.
+SENTINEL is a privacy-first, local-first multimodal AI companion. Verified core perception, speech, memory, retrieval, and workspace capabilities execute locally on the development host without cloud inference dependencies. A Qualcomm QNN/QAIRT/GenieX runtime path is prepared for Snapdragon X-series deployment, with physical NPU validation pending.
 
 ---
 
@@ -55,7 +55,7 @@ User Question (text / voice / camera / document)
   OPEN_DOCUMENT / OPEN_MEMORY / grounded text)
 ```
 
-The **SEE → READ → HEAR → REMEMBER → UNDERSTAND → FIND** loop runs entirely on-device with zero cloud calls.
+Verified local components (YOLO-X, EasyOCR, Whisper-Tiny, MiniLM, tracking, retrieval, orchestration) process queries on-device with no cloud AI inference dependencies. The Qualcomm QNN/QAIRT/GenieX runtime adapter is prepared for Snapdragon X-series deployment; physical NPU validation is pending.
 
 ---
 
@@ -163,8 +163,8 @@ SENTINEL's modular runtime adapter architecture (`CPURuntimeAdapter` ↔ `QNNRun
 ### Step 1 — Clone repository
 
 ```powershell
-git clone <REPOSITORY_URL>
-cd Snapdragon
+git clone https://github.com/ShreyanshuSB/Snapdragon-Sentinel_AI.git
+cd Snapdragon-Sentinel_AI
 ```
 
 ### Step 2 — Create Python virtual environment

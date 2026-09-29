@@ -41,7 +41,7 @@ All benchmark results conform to the typed `BenchmarkRecord` schema:
   "average_inference_ms": 14.2,
   "throughput": 70.4,
   "memory_mb": 420.0,
-  "notes": "Verified on Snapdragon Windows host."
+  "notes": "Reference target projection for Snapdragon X Elite — not physically verified on hardware."
 }
 ```
 
@@ -171,7 +171,7 @@ In Step 5 (Real-Time Desk Tracking, Visual Grounding & "Find It" Workspace Local
 - **Tracking Throughput Capacity**:
   - Tracker execution overhead alone: **> 1,000 FPS** (sub-millisecond tracking pass).
   - Overall pipeline throughput on Host CPU: **~9.5 - 11.3 FPS** (gated by host CPU YOLO-X inference).
-  - Target Snapdragon throughput: **> 60 FPS** (with YOLO-X accelerated via Qualcomm Hexagon NPU).
+  - Target Snapdragon throughput: **> 60 FPS** (projected target with YOLO-X INT8 accelerated via Qualcomm Hexagon NPU — **not yet physically verified**).
 - **Memory Footprint**:
   - Stored tracked object cache: `~2.1 KB` per active object in RAM.
   - Zero raw video frames persisted to disk or database.
