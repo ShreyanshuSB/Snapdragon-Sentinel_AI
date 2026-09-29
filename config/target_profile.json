@@ -1,0 +1,10 @@
+{
+  "target_platform": "Snapdragon Copilot+ PC",
+  "target_cpu": "Qualcomm Snapdragon X Elite / X Plus",
+  "target_gpu": "Qualcomm Adreno GPU",
+  "target_npu": "Qualcomm Hexagon NPU (45 TOPS)",
+  "target_architecture": "ARM64",
+  "target_os": "Windows 11 on ARM64",
+  "preferred_runtime": "ONNX Runtime with QNN Execution Provider",
+  "notes": "Target production profile for Windows on Snapdragon hardware acceleration. Development machines operating on x86_64/CPU represent non-accelerated staging environments."
+}

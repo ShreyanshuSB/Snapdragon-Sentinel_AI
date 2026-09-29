@@ -1,0 +1,119 @@
+# Node / Next.js
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/.vercel/
+.next/
+node_modules/
+
+# Python & Testing
+__pycache__/
+*/__pycache__/
+*/*/__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+*/.pytest_cache/
+.coverage
+htmlcov/
+coverage/
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+!.env.example
+
+# Local SQLite Databases
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+backend/*.db
+backend/**/*.db
+sentinel.db
+
+# User Uploads and Temporary Files
+data/uploads/*
+!data/uploads/.gitkeep
+backend/data/uploads/*
+!backend/data/uploads/.gitkeep
+
+# OS and Editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build and Distribution Artifacts
+build/
+dist/
+*.egg-info/
+
+# AI Models & Weights (never commit binary weights)
+models/vision/*.onnx
+models/vision/*.bin
+models/vision/*.pt
+models/vision/*.pth
+models/vision/*.weights
+models/vision/*.engine
+models/**/*.onnx
+models/**/*.bin
+models/**/*.pt
+models/**/*.pth
+models/**/*.weights
+!models/**/README.md
+!models/**/.gitkeep
+
+# Audio Recordings (User Privacy & Submission Cleanliness)
+*.wav
+*.mp3
+*.ogg
+*.flac
+*.m4a
+data/audio/*
+!data/audio/.gitkeep
+
+# Benchmark Artifacts & Logs
+benchmarks/*.log
+benchmarks/results/*
+!benchmarks/results/.gitkeep
+*.log
+
+# Third-party local binaries
+opencode-windows-x64/
+
+# TypeScript Build Cache
+*.tsbuildinfo
+frontend/tsconfig.tsbuildinfo
+
+# AI Tooling Instruction Files (internal, not for public repo)
+AGENTS.md
+CLAUDE.md
+frontend/AGENTS.md
+frontend/CLAUDE.md
+
+# Internal Development Artifacts (not for public repo)
+docs/development-plan.md
+docs/product-spec.md
+docs/project-description-draft.md
+
+# Benchmark JSON output artifacts
+docs/vision_baseline_report.json
+
+# Submission screenshots (user captures; not committed)
+submission/assets/*.png
+submission/assets/*.jpg
+submission/assets/*.webp
+!submission/assets/.gitkeep
