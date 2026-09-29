@@ -19,14 +19,7 @@ SENTINEL — Privacy-First Local Multimodal AI Companion
 - **Plain-text summary** (if a text field is provided on the form):
 
 ```
-SENTINEL is an on-device, privacy-first multimodal AI companion that sees, reads,
-hears, remembers, understands, and finds objects across physical workspaces. Running
-100% locally with zero cloud AI dependencies, it unifies YOLO-X real-time desk
-tracking, EasyOCR document extraction, Whisper-Tiny speech-to-text, and local hybrid
-semantic memory into a single grounded orchestration loop. Designed for Qualcomm
-Snapdragon X-series Copilot+ PCs with Qualcomm Hexagon NPU target architecture.
-Current development host: Intel x86_64. Snapdragon NPU execution: not yet verified
-on physical hardware.
+SENTINEL is a privacy-first, local-first multimodal AI companion that sees, reads, hears, remembers, understands, and helps users find information across physical workspaces. Verified core components including YOLO-X vision, EasyOCR, Whisper-Tiny, MiniLM semantic memory, workspace tracking, retrieval, and orchestration execute locally on the Intel development host without cloud AI inference dependencies. A Qualcomm QNN/QAIRT/GenieX runtime path is prepared for Snapdragon X-series deployment. Physical Snapdragon NPU execution and the target Qwen3-VL-4B runtime remain not yet verified on hardware.
 ```
 
 ---
@@ -34,7 +27,7 @@ on physical hardware.
 ### Form Field 3: GitHub Repository Link
 
 ```
-<INSERT_FINAL_PUBLIC_GITHUB_URL>
+https://github.com/ShreyanshuSB/Snapdragon-Sentinel_AI
 ```
 
 > Ensure all local `.env`, SQLite databases, audio recordings, and model binaries remain excluded via `.gitignore` before publishing. Run `python scripts/verify_installation.py` to confirm the repository is clean and reproducible.
@@ -72,8 +65,8 @@ on physical hardware.
 
 ### Supplementary Notes
 
-**Cloud AI Statement**: SENTINEL does not use any cloud AI API endpoints. All models and vectors run locally on device.
+**Cloud AI Statement**: SENTINEL does not use any cloud AI API endpoints. Verified core components (YOLO-X vision, EasyOCR, Whisper-Tiny, MiniLM semantic memory, workspace tracking, and retrieval) execute locally without cloud AI inference dependencies.
 
-**Hardware Truthfulness**: Hardware acceleration status is truthfully documented throughout the application, documentation, and pitch materials. Current host is Intel x86_64 CPU. Qualcomm Snapdragon Hexagon NPU execution is designed as the target architecture and awaits physical on-device verification.
+**Hardware Truthfulness**: Hardware acceleration status is truthfully documented throughout the application, documentation, and pitch materials. Current host is Intel x86_64. Qualcomm Snapdragon Hexagon NPU execution and the target Qwen3-VL-4B runtime are prepared as deployment paths and await physical on-device verification.
 
 **Reproducibility**: Repository includes `run_sentinel.bat` (one-click Windows launcher), `scripts/verify_installation.py` (pre-flight checker), `.env.example` (complete configuration template), and `docs/ai-models.md` (model download guide). No cloud accounts required after initial model artifact download.
